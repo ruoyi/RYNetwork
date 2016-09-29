@@ -10,7 +10,7 @@
 #import "RYNewWorkResponse.h"
 #import "AFNetworking.h"
 
-@class AFHTTPRequestSerializer,AFHTTPResponseSerializer,RYNetWorkHandler;
+@class RYNetWorkHandler;
 
 typedef void (^RYNetWorkHandlerBlock)(RYNewWorkResponse *responseObj);
 

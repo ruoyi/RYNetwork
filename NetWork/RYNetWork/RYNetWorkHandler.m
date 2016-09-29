@@ -5,12 +5,10 @@
 //  Created by 若懿 on 16/9/8.
 //  Copyright © 2016年 若懿. All rights reserved.
 //
-#import "RYNetWorkGlobalConfig.h"
 
 #import "RYNetWorkHandler.h"
 #import "RYNetWorkAgent.h"
-#import "AFURLRequestSerialization.h"
-#import "AFURLResponseSerialization.h"
+#import "RYNetWorkGlobalConfig.h"
 
 @interface RYNetWorkHandler ()
 

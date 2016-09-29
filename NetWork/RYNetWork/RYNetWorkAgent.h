@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "RYNetWorkHandler.h"
-@class AFHTTPSessionManager;
 
 @interface RYNetWorkAgent : NSObject
 

@@ -7,7 +7,6 @@
 //
 
 #import "RYNetWorkAgent.h"
-#import "AFNetworking.h"
 #import "RYNetWorkGlobalConfig.h"
 
 @interface RYNetWorkHandler (Handle)

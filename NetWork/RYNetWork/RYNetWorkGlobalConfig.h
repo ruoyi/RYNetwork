@@ -23,7 +23,6 @@ static inline NSString *StringValue(id obj) {
     } else if ([obj isKindOfClass:[NSNumber class]]) {
         return  [(NSNumber *)obj stringValue];
     }
-    
     return @"";
 }
 
