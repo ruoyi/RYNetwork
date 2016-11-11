@@ -1,5 +1,5 @@
 //
-//  RYNetWorkGlobalConfig.h
+//  RYNetworkConfig.h
 //  NetWork
 //
 //  Created by 若懿 on 16/9/9.
@@ -14,8 +14,7 @@
 #define RYLog(FORMAT, ...) nil
 #endif
 
-
-static inline NSString *StringValue(id obj) {
+static inline NSString *RY_StringValue(id obj) {
     if([obj isKindOfClass:[NSString class]]) {
         return (NSString *)obj;
     } else if ([obj isKindOfClass:[NSNull class]]|| obj == nil) {
@@ -28,29 +27,24 @@ static inline NSString *StringValue(id obj) {
 
 
 @class AFHTTPRequestSerializer,AFHTTPResponseSerializer;
-@interface RYNetWorkGlobalConfig : NSObject
+@interface RYNetworkConfig : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
 
 + (instancetype)new NS_UNAVAILABLE;
 
-+ (RYNetWorkGlobalConfig *)sharedConfig;
-
-
-@property (nonatomic, assign) NSTimeInterval timeout;
++ (RYNetworkConfig *)sharedConfig;
 
 @property (nonatomic, strong) NSString *hostURL;
 // define is 60s
 @property (nonatomic, assign) NSUInteger maxRequest;
 
-@property (nonatomic, assign) NSUInteger maxCacheSize;
-
-@property (nonatomic, assign) NSTimeInterval maxCacheTime;
 
 @property (nonatomic, strong) AFHTTPResponseSerializer *responseSerializer;
 
-@property (nonatomic, strong) AFHTTPRequestSerializer *requestSerializer;
+@property (nonatomic, strong, readonly) AFHTTPRequestSerializer *requestSerializer;
 
 - (void)cancelAllRequests;
 
 @end
+

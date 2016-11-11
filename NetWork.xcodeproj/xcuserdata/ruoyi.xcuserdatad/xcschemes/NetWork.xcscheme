@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
                BlueprintIdentifier = "27A74E741D8154660065BCA9"
                BuildableName = "NetWork.app"
                BlueprintName = "NetWork"
-               ReferencedContainer = "container:NetWork.xcodeproj">
+               ReferencedContainer = "container:Network.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "27A74E8D1D8154660065BCA9"
                BuildableName = "NetWorkTests.xctest"
                BlueprintName = "NetWorkTests"
-               ReferencedContainer = "container:NetWork.xcodeproj">
+               ReferencedContainer = "container:Network.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "27A74E981D8154660065BCA9"
                BuildableName = "NetWorkUITests.xctest"
                BlueprintName = "NetWorkUITests"
-               ReferencedContainer = "container:NetWork.xcodeproj">
+               ReferencedContainer = "container:Network.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "27A74E741D8154660065BCA9"
             BuildableName = "NetWork.app"
             BlueprintName = "NetWork"
-            ReferencedContainer = "container:NetWork.xcodeproj">
+            ReferencedContainer = "container:Network.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "27A74E741D8154660065BCA9"
             BuildableName = "NetWork.app"
             BlueprintName = "NetWork"
-            ReferencedContainer = "container:NetWork.xcodeproj">
+            ReferencedContainer = "container:Network.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "27A74E741D8154660065BCA9"
             BuildableName = "NetWork.app"
             BlueprintName = "NetWork"
-            ReferencedContainer = "container:NetWork.xcodeproj">
+            ReferencedContainer = "container:Network.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

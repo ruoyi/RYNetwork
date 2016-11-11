@@ -1,21 +1,27 @@
 //
-//  RYNetWorkGlobalConfig.m
+//  RYNetworkConfig.m
 //  NetWork
 //
 //  Created by 若懿 on 16/9/9.
 //  Copyright © 2016年 若懿. All rights reserved.
 //
 
-#import "RYNetWorkGlobalConfig.h"
+#import "RYNetworkConfig.h"
 #import "AFNetworking.h"
 
 static NSLock *taskLock;
-@implementation RYNetWorkGlobalConfig {
-    NSMutableArray *_taskArr;
-}
 
-+ (RYNetWorkGlobalConfig *)sharedConfig {
-    static RYNetWorkGlobalConfig * shareInstace = nil;
+@interface RYNetworkConfig ()
+
+@property (nonatomic, copy) NSMutableSet *taskArr;
+
+
+@end
+
+@implementation RYNetworkConfig
+
++ (RYNetworkConfig *)sharedConfig {
+    static RYNetworkConfig * shareInstace = nil;
     static dispatch_once_t onceMark;
     dispatch_once(&onceMark, ^{
         shareInstace = [[self alloc]init];
@@ -28,17 +34,14 @@ static NSLock *taskLock;
     self = [super init];
     if (self) {
         taskLock = [[NSLock alloc]init];
-        _taskArr = [NSMutableArray new];
-        self.maxRequest = 3;
-        self.timeout = 60;
-        self.requestSerializer = [AFHTTPRequestSerializer serializer];
+        _taskArr = [NSMutableSet new];
+        self.maxRequest = 5;
         self.responseSerializer = [AFJSONResponseSerializer serializer];
+        self.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",@"text/html",@"text/json",@"text/plain",@"text/javascript",@"text/xml",@"image/*"]];
+        _requestSerializer = [AFHTTPRequestSerializer serializer];
+        _requestSerializer.stringEncoding = NSUTF8StringEncoding;
     }
     return self;
-}
-
-- (NSString *)description {
-    return [NSString stringWithFormat:@"<%@: %p>\n{ baseURL: %@, timeout: %lu }", NSStringFromClass([self class]), self, self.hostURL,(unsigned long)self.maxRequest];
 }
 
 - (void)addTask:(NSURLSessionTask *)task {
@@ -58,12 +61,12 @@ static NSLock *taskLock;
 }
 - (void)cancelAllRequests {
     [taskLock lock];
-    [_taskArr enumerateObjectsUsingBlock:^(NSURLSessionTask *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_taskArr enumerateObjectsUsingBlock:^(NSURLSessionTask *  _Nonnull obj, BOOL * _Nonnull stop) {
         if ([obj isKindOfClass:[NSURLSessionTask class]]) {
             [obj cancel];
         }
     }];
-    _taskArr = [NSMutableArray new];
+    _taskArr = [NSMutableSet new];
     [taskLock unlock];
 }
 

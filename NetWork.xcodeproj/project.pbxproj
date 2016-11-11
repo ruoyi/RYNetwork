@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277745B71DB715AA00642ABA /* RYNetworkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 277745B61DB715AA00642ABA /* RYNetworkResponse.m */; };
 		27A74E7A1D8154660065BCA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A74E791D8154660065BCA9 /* main.m */; };
 		27A74E7D1D8154660065BCA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A74E7C1D8154660065BCA9 /* AppDelegate.m */; };
 		27A74E801D8154660065BCA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A74E7F1D8154660065BCA9 /* ViewController.m */; };
@@ -19,11 +20,10 @@
 		27A74EBC1D8154A40065BCA9 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A74EB41D8154A40065BCA9 /* AFURLRequestSerialization.m */; };
 		27A74EBD1D8154A40065BCA9 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A74EB61D8154A40065BCA9 /* AFURLResponseSerialization.m */; };
 		27A74EBE1D8154A40065BCA9 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A74EB81D8154A40065BCA9 /* AFURLSessionManager.m */; };
-		27A74EC41D8165220065BCA9 /* Foundation+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A74EC31D8165220065BCA9 /* Foundation+Extension.m */; };
-		27AC28A31D9027020059535A /* RYNetWorkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC289E1D9027020059535A /* RYNetWorkAgent.m */; };
-		27AC28A41D9027020059535A /* RYNetWorkGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC28A01D9027020059535A /* RYNetWorkGlobalConfig.m */; };
-		27AC28A51D9027020059535A /* RYNewWorkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC28A21D9027020059535A /* RYNewWorkResponse.m */; };
-		27AC28A81D90274A0059535A /* RYNetWorkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC28A71D90274A0059535A /* RYNetWorkHandler.m */; };
+		27AC28A31D9027020059535A /* RYNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC289E1D9027020059535A /* RYNetworkAgent.m */; };
+		27AC28A41D9027020059535A /* RYNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC28A01D9027020059535A /* RYNetworkConfig.m */; };
+		27AC28A81D90274A0059535A /* RYNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC28A71D90274A0059535A /* RYNetworkHandler.m */; };
+		27BFFD781DB8D0C60092AE6C /* NSObject+Lazyload.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFFD771DB8D0C60092AE6C /* NSObject+Lazyload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		277745B51DB715AA00642ABA /* RYNetworkResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RYNetworkResponse.h; path = Network/RYNetwork/RYNetworkResponse.h; sourceTree = SOURCE_ROOT; };
+		277745B61DB715AA00642ABA /* RYNetworkResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RYNetworkResponse.m; path = Network/RYNetwork/RYNetworkResponse.m; sourceTree = SOURCE_ROOT; };
 		27A74E751D8154660065BCA9 /* NetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A74E791D8154660065BCA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27A74E7B1D8154660065BCA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,16 +71,14 @@
 		27A74EB61D8154A40065BCA9 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		27A74EB71D8154A40065BCA9 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		27A74EB81D8154A40065BCA9 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		27A74EC21D8165220065BCA9 /* Foundation+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Extension.h"; sourceTree = "<group>"; };
-		27A74EC31D8165220065BCA9 /* Foundation+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Extension.m"; sourceTree = "<group>"; };
-		27AC289D1D9027020059535A /* RYNetWorkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYNetWorkAgent.h; sourceTree = "<group>"; };
-		27AC289E1D9027020059535A /* RYNetWorkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYNetWorkAgent.m; sourceTree = "<group>"; };
-		27AC289F1D9027020059535A /* RYNetWorkGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYNetWorkGlobalConfig.h; sourceTree = "<group>"; };
-		27AC28A01D9027020059535A /* RYNetWorkGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYNetWorkGlobalConfig.m; sourceTree = "<group>"; };
-		27AC28A11D9027020059535A /* RYNewWorkResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYNewWorkResponse.h; sourceTree = "<group>"; };
-		27AC28A21D9027020059535A /* RYNewWorkResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYNewWorkResponse.m; sourceTree = "<group>"; };
-		27AC28A61D90274A0059535A /* RYNetWorkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYNetWorkHandler.h; sourceTree = "<group>"; };
-		27AC28A71D90274A0059535A /* RYNetWorkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYNetWorkHandler.m; sourceTree = "<group>"; };
+		27AC289D1D9027020059535A /* RYNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYNetworkAgent.h; sourceTree = "<group>"; };
+		27AC289E1D9027020059535A /* RYNetworkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYNetworkAgent.m; sourceTree = "<group>"; };
+		27AC289F1D9027020059535A /* RYNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYNetworkConfig.h; sourceTree = "<group>"; };
+		27AC28A01D9027020059535A /* RYNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYNetworkConfig.m; sourceTree = "<group>"; };
+		27AC28A61D90274A0059535A /* RYNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYNetworkHandler.h; sourceTree = "<group>"; };
+		27AC28A71D90274A0059535A /* RYNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYNetworkHandler.m; sourceTree = "<group>"; };
+		27BFFD761DB8D0C60092AE6C /* NSObject+Lazyload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Lazyload.h"; path = "Network/NSObject+Lazyload.h"; sourceTree = SOURCE_ROOT; };
+		27BFFD771DB8D0C60092AE6C /* NSObject+Lazyload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Lazyload.m"; path = "Network/NSObject+Lazyload.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +132,9 @@
 				27A74E7C1D8154660065BCA9 /* AppDelegate.m */,
 				27A74E7E1D8154660065BCA9 /* ViewController.h */,
 				27A74E7F1D8154660065BCA9 /* ViewController.m */,
+				27BFFD761DB8D0C60092AE6C /* NSObject+Lazyload.h */,
+				27BFFD771DB8D0C60092AE6C /* NSObject+Lazyload.m */,
 				27AC289C1D9027020059535A /* RYNetWork */,
-				27A74EC21D8165220065BCA9 /* Foundation+Extension.h */,
-				27A74EC31D8165220065BCA9 /* Foundation+Extension.m */,
 				27A74E811D8154660065BCA9 /* Main.storyboard */,
 				27A74E841D8154660065BCA9 /* Assets.xcassets */,
 				27A74E861D8154660065BCA9 /* LaunchScreen.storyboard */,
@@ -175,14 +175,14 @@
 		27AC289C1D9027020059535A /* RYNetWork */ = {
 			isa = PBXGroup;
 			children = (
-				27AC28A61D90274A0059535A /* RYNetWorkHandler.h */,
-				27AC28A71D90274A0059535A /* RYNetWorkHandler.m */,
-				27AC289D1D9027020059535A /* RYNetWorkAgent.h */,
-				27AC289E1D9027020059535A /* RYNetWorkAgent.m */,
-				27AC289F1D9027020059535A /* RYNetWorkGlobalConfig.h */,
-				27AC28A01D9027020059535A /* RYNetWorkGlobalConfig.m */,
-				27AC28A11D9027020059535A /* RYNewWorkResponse.h */,
-				27AC28A21D9027020059535A /* RYNewWorkResponse.m */,
+				27AC28A61D90274A0059535A /* RYNetworkHandler.h */,
+				27AC28A71D90274A0059535A /* RYNetworkHandler.m */,
+				27AC289D1D9027020059535A /* RYNetworkAgent.h */,
+				27AC289E1D9027020059535A /* RYNetworkAgent.m */,
+				27AC289F1D9027020059535A /* RYNetworkConfig.h */,
+				27AC28A01D9027020059535A /* RYNetworkConfig.m */,
+				277745B51DB715AA00642ABA /* RYNetworkResponse.h */,
+				277745B61DB715AA00642ABA /* RYNetworkResponse.m */,
 			);
 			path = RYNetWork;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 		27A74E6D1D8154660065BCA9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "若懿";
 				TargetAttributes = {
 					27A74E741D8154660065BCA9 = {
@@ -265,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 27A74E701D8154660065BCA9 /* Build configuration list for PBXProject "NetWork" */;
+			buildConfigurationList = 27A74E701D8154660065BCA9 /* Build configuration list for PBXProject "Network" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -317,14 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27AC28A81D90274A0059535A /* RYNetWorkHandler.m in Sources */,
+				27AC28A81D90274A0059535A /* RYNetworkHandler.m in Sources */,
+				27BFFD781DB8D0C60092AE6C /* NSObject+Lazyload.m in Sources */,
+				277745B71DB715AA00642ABA /* RYNetworkResponse.m in Sources */,
 				27A74EBE1D8154A40065BCA9 /* AFURLSessionManager.m in Sources */,
-				27AC28A31D9027020059535A /* RYNetWorkAgent.m in Sources */,
-				27AC28A41D9027020059535A /* RYNetWorkGlobalConfig.m in Sources */,
+				27AC28A31D9027020059535A /* RYNetworkAgent.m in Sources */,
+				27AC28A41D9027020059535A /* RYNetworkConfig.m in Sources */,
 				27A74E801D8154660065BCA9 /* ViewController.m in Sources */,
 				27A74E7D1D8154660065BCA9 /* AppDelegate.m in Sources */,
-				27A74EC41D8165220065BCA9 /* Foundation+Extension.m in Sources */,
-				27AC28A51D9027020059535A /* RYNewWorkResponse.m in Sources */,
 				27A74EBA1D8154A40065BCA9 /* AFNetworkReachabilityManager.m in Sources */,
 				27A74E7A1D8154660065BCA9 /* main.m in Sources */,
 				27A74EBB1D8154A40065BCA9 /* AFSecurityPolicy.m in Sources */,
@@ -397,8 +397,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -442,8 +444,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -538,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27A74E701D8154660065BCA9 /* Build configuration list for PBXProject "NetWork" */ = {
+		27A74E701D8154660065BCA9 /* Build configuration list for PBXProject "Network" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27A74EA01D8154660065BCA9 /* Debug */,

@@ -1,5 +1,5 @@
 //
-//  RYNetWorkAgent.h
+//  RYNetworkAgent.h
 //  NetWork
 //
 //  Created by 若懿 on 16/9/9.
@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RYNetWorkHandler.h"
+#import "RYNetworkHandler.h"
 
-@interface RYNetWorkAgent : NSObject
+@interface RYNetworkAgent : NSObject
 
 @property (nonatomic, copy) AFHTTPSessionManager *manager;
 
-+ (RYNetWorkAgent *)sharedAgent;
++ (RYNetworkAgent *)sharedAgent;
 
-- (void)addRequest:(RYNetWorkHandler *)request withHandle:(RYNetWorkHandlerBlock)handle;
+- (void)addRequest:(RYNetworkHandler *)request;
 
 @end

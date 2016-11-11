@@ -7,28 +7,41 @@
 //
 
 #import "ViewController.h"
-#import "RYNetWorkHandler.h"
+#import "RYNetworkHandler.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController {
-    RYNetWorkHandler *handle;
+    RYNetworkHandler *handle;
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *str1 = [NSString stringWithFormat:@""];
+    NSLog(@"%p",str1);
+    if (str1.length>0) {
+        NSLog(@"str1.length>0");
+    }
+    NSString *str2 = @"";
+    NSLog(@"%p",str2);
+
+    if (str2.length>0) {
+        NSLog(@"str1.length>0");
+    }
+
     
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)request:(id)sender {
-    handle = [[RYNetWorkHandler alloc]init];
-
-    [handle.hostURL(@"http://192.168.1.109:8000").path(nil).parameters(@{
+    handle = [[RYNetworkHandler alloc]init];
+    
+    [handle.hostURL(@"http://123.56.201.242:1024/plan-new/index").requestMethod(RYNetworkRequestMethodPost).path(nil).parameters(@{
                                                                               @"r":@"city/view",
                                                                               @"id":@"93",
-                                                                              }) handleResponse:^(RYNewWorkResponse *object) {
+                                                                              }) handleResponse:^(RYNetworkResponse *object) {
         if (object.isSuccess) {
             
         }
@@ -39,7 +52,7 @@
 //        NSDictionary *dic = [NSDictionary dictionaryWithDictionary:object.responseData];
 
     }];
-    [handle cancelRequest];
+//    [handle cancelRequest];
 
 }
 
@@ -47,5 +60,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (NSArray *)ry_lazyloadObect {
+    return @[];
+}
+
 
 @end
