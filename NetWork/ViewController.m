@@ -45,14 +45,8 @@
         if (object.isSuccess) {
             
         }
-//        NSJSONSerialization *json = [NSJSONSerialization JSONObjectWithData:object.responseData options:NSJSONReadingMutableContainers error:nil];
-//        NSString *string = [[NSString alloc] initWithData:object.responseData encoding:NSUTF8StringEncoding];
-//            NSLog(@"%@",string);
-
-//        NSDictionary *dic = [NSDictionary dictionaryWithDictionary:object.responseData];
 
     }];
-//    [handle cancelRequest];
 
 }
 
@@ -60,10 +54,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (NSArray *)ry_lazyloadObect {
-    return @[];
-}
-
 
 @end

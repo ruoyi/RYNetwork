@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "Simpler to useAFNetingworking"
   s.homepage     = "https://github.com/ruoyi/RYNetwork"
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   s.author             = { "ruoyi" => "woruoyi@gmail.com" }
   s.platform     = :ios
   s.platform     = :ios, "8.0"
