@@ -10,13 +10,17 @@
 
 @interface RYNetworkResponse : NSObject
 
-@property (nonatomic, assign, readonly) BOOL isSuccess;
+@property (nonatomic, assign) BOOL isSuccess;
 
 @property (nonatomic, strong) id responseData;
 
-@property (nonatomic, strong, readonly) NSError *error;
+@property (nonatomic, strong) NSString *errorMsg;
 
-@property (nonatomic, strong) id tagObj;
+@property (nonatomic, strong) NSNumber *errorCode;
+
+@property (nonatomic, strong) NSError *error;
+
+
 
 - (instancetype)initWithSccess:(BOOL )aIsSuccess responseData:(id)aResponseData  error:(NSError *)aError;
 

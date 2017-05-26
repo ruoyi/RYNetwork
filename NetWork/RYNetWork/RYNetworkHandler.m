@@ -122,6 +122,7 @@
 }
 
 - (void)cancelRequest {
+    [self _clearBlock];
     [[RYNetworkConfig sharedConfig] deleteTask:self.task];
     [self.task cancel];
 }
@@ -135,7 +136,7 @@
     
 }
 
-- (void)handlerRequestFilure{
+- (void)handlerRequestFailure{
     
     //    handle(resposnseData);
 }
@@ -145,9 +146,11 @@
     if (_responseObj.isSuccess) {
         [self handlerRequestSuccess];
     }else {
-        [self handlerRequestFilure];
+        [self handlerRequestFailure];
     }
-    self.handleBlock(self.responseObj);
+    if (self.handleBlock) {
+        self.handleBlock(self.responseObj);
+    }
     if ([self.delegate respondsToSelector:@selector(requestDidFinish:)]) {
         [self.delegate requestDidFinish:self];
     }
